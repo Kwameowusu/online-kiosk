@@ -1,0 +1,189 @@
+.promptShowAnimate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.promptHideAnimate {
+    display: none;
+}
+
+.ZoomInUp {
+    -webkit-animation-name: ZoomInUp;
+    animation-name: ZoomInUp;
+    /* animation-duration: 700ms; */
+}
+
+
+
+@-webkit-keyframes ZoomInUp {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+@keyframes ZoomInUp {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+
+
+.ZoomOutDown {
+    -webkit-animation-name: ZoomOutDown;
+    animation-name: ZoomOutDown;
+    /* animation-duration: 700ms; */
+}
+
+@-webkit-keyframes ZoomOutDown {
+    40% {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+@keyframes ZoomOutDown {
+    40% {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+
+.ZoomIn {
+    -webkit-animation-name: ZoomIn;
+    animation-name: ZoomIn;
+    /* animation-duration: 700ms; */
+}
+
+@-webkit-keyframes ZoomIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    50% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes ZoomIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    50% {
+        opacity: 1;
+        visibility: visible;
+
+    }
+}
+
+
+
+.ZoomOut {
+    -webkit-animation-name: ZoomOut;
+    animation-name: ZoomOut;
+}
+
+
+
+@keyframes ZoomOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    50% {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+@-webkit-keyframes ZoomOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    50% {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

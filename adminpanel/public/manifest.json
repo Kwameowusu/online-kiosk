@@ -1,0 +1,31 @@
+{
+  "short_name": "Granddies CMS",
+  "name": "Granddies admin panel",
+  "description": "CMS web application to manage Granddies products in his online kisok",
+  "dir": "ltr",
+  "version": "1.0",
+  "lang": "en-US",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "id":"/",
+  "display": "standalone",
+  "theme_color": "#05260f",
+  "background_color": "#ffffff"
+}
